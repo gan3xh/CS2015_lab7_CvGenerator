@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>220103020</title>
+    <link rel="stylesheet" href="220103020-lab7.css" />
+    <script src="220103020-lab7.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <h1>
+      <center>
+        Dynamic CV Generator: Tailored Resumes for the Modern Professional
+      </center>
+    </h1>
+    <h2>
+      <center>
+        We will collect information associated with Curriculum Vitae of you and
+        display(and print) the Curriculum Vitae based on user's choice on
+        formatting.
+      </center>
+    </h2>
+
+    <form id="cv-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="profile-summary">Profile Summary:</label>
+      <textarea id="profile-summary" name="profile-summary"></textarea>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" required />
+
+      <label for="academic-qualifications">Academic Qualifications:</label>
+      <textarea
+        id="academic-qualifications"
+        name="academic-qualifications"
+      ></textarea>
+
+      <label for="projects">Projects Completed:</label>
+      <textarea id="projects" name="projects"></textarea>
+
+      <label for="skills">Skills(Programming Language):</label>
+      <textarea id="skills" name="skills"></textarea>
+
+      <label for="languages">Languages Known:</label>
+      <textarea id="languages" name="languages"></textarea>
+
+      <label for="father-name">Father's Name:</label>
+      <input type="text" id="father-name" name="father-name" />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" />
+
+      <label for="social-links">Social Links:</label>
+      <textarea id="social-links" name="social-links"></textarea>
+      <center>
+        <label for="cv-format">Choose your CV Format:</label>
+        <select id="cv-format" name="cv-format">
+          <option value="lab-6-format1">Format-1</option>
+          <option value="lab-6-format2">Format-2</option>
+        </select>
+      </center>
+      <br /><br />
+      <center>
+        <button type="button" onclick="generateCV()">Generate CV</button>
+      </center>
+    </form>
+    <div id="cv-container" class="cv-container"></div>
+
+    <div id="download-options">
+      <center>
+        <label for="download-format">Download CV Format:</label>
+
+        <select id="download-format">
+          <option value="xml">XML</option>
+          <option value="pdf">PDF</option>
+          <option value="html">HTML</option>
+        </select>
+
+        <button id="download-btn" onclick="downloadCV()">Download CV</button>
+      </center>
+    </div>
+  </body>
+</html>
