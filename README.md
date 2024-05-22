@@ -4,6 +4,9 @@ Sure, here's a professional README file for the Dynamic CV Generator project:
 
 The Dynamic CV Generator is a web application that allows users to create and customize their curriculum vitae (CV) or resume online. It provides a user-friendly interface for inputting personal details, educational qualifications, skills, projects, and other relevant information. The generated CV can be downloaded in various formats, including PDF, HTML, and XML.
 
+# About
+This project is a lab assignment for the course Web Technology (CS2015) taught by Navanath Saharia at the Indian Institute of Information Technology (IIIT), Manipur. It is designed to demonstrate the practical application of web development technologies like HTML, CSS, and JavaScript.
+
 ## Features
 
 - **User Input Form**: A comprehensive form for users to enter their name, profile summary, contact information, academic qualifications, completed projects, skills, languages known, and other relevant details.
